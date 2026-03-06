@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ttscraper-app
+    volumes:
+      - ./src:/app/src
+    shm_size: "2gb"
