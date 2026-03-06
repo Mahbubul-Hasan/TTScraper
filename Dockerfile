@@ -21,5 +21,4 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY src /app/src
-ENTRYPOINT ["python", "-m", "src.main"]
-CMD []
+CMD ["python", "-m", "src.main"]
